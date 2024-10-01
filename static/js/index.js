@@ -13,9 +13,9 @@ const numGen = genRandNum(1, 100);
 let tentativi = 5
 
 //inizio del gioco
-console.log("----------------------------------------------------------")
-console.log("benvenuto al gioco 'indovina il numero'!\n hai 5 tentativi per indovinare il numero compreso tra 1 a 100 ");
-console.log("----------------------------------------------------------")
+console.log("---------------------------------------------------------------");
+console.log("benvenuto al gioco 'indovina il numero'!\nhai 5 tentativi per indovinare il numero compreso tra 1 a 100 ");
+console.log("---------------------------------------------------------------");
 
 //inizio while
 while(tentativi > 0){
