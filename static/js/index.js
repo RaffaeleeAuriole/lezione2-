@@ -13,25 +13,27 @@ const numGen = genRandNum(1, 100);
 let tentativi = 5
 
 //inizio del gioco
-console.log("benvenuto al gioco 'indovina il numero'! hai 5 tentativi per indovinare il numero compreso tra 1 a 100 ");
+console.log("----------------------------------------------------------")
+console.log("benvenuto al gioco 'indovina il numero'!\n hai 5 tentativi per indovinare il numero compreso tra 1 a 100 ");
+console.log("----------------------------------------------------------")
 
 //inizio while
 while(tentativi > 0){
-    let input = prompt("inserisci un numero da 1 a 100");
+    let input = prompt("inserisci un numero da 1 a 100:  ");
 
     /*iniziamo il sanitize*/
     let numUtente = sanitize(input);
 
     //controllo dell'input dell'utente
     if (isNaN(numUtente) || numUtente < 1 || numUtente > 100){
-        console.log("input non valido. inserisci un numero tra 1 e 100");
+        console.log("input non valido. inserisci un numero tra 1 e 100:  ");
     }
 
     /*creazione dei vari segnali da dare all'utente per fargli indovinare il numero */
     if(numUtente > numGen){
-        console.log("troppo grande");
+        console.log("troppo grande, riprova");
     }else if (numUtente < numGen){
-        console.log("troppo piccolo");
+        console.log("troppo piccolo, riprova");
     }else{
         console.log("bravo, hai vinto!")
     }
