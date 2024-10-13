@@ -1,8 +1,8 @@
 /*funzione per generare il numero randomico da indovinare */
 function genRandNum(min = 0,  max = 100){
-            numGen = Math.random()
-            numGen = numGen * (max - min) + min
-            return Math.floor(numGen)
+           let numGen = Math.random()
+                numGen = numGen * (max - min) + min
+                return Math.floor(numGen)
         }
 /*funzione per il sanitize l'input */
 function sanitize(input){
@@ -12,7 +12,7 @@ function sanitize(input){
 //funzione che crea un evento e alla variabile numUtente fa il sanitize con la classe document usando il suo oggetto queryselector he seleziona l'attributo value
 function handleClick(event){
     numUtente = sanitize(document.querySelector("#guess").value);
-    console.log(userNumber);
+    console.log(numUtente);
     /*creazione dei vari segnali da dare all'utente per fargli indovinare il numero */
     if(numUtente > numGen){
         console.log("troppo grande, riprova");
@@ -30,6 +30,5 @@ function handleClick(event){
 /*creazione della costante del numero da 1 a 100 e la variabile che conta i tentativi */
 const numGen = genRandNum(1, 100);
 let tentativi = 5
-console.log(randomNumber)
-let button = document.querySelector("#guessButton")
-button.addEventListener("click", handleClick);
+let btn = document.querySelector("#guessButton");
+btn.addEventListener("click", handleClick);
