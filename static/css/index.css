@@ -1,54 +1,75 @@
-body{
-    text-align: center;
-    justify-items: center;
-    padding-top: 100px;
-    background-color: blueviolet;
-    padding: 20px;
-    margin: 0;
-    color: #9C229C; 
-}
-
 .contenitore{
-    max-width: 450px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: aquamarine;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0 , 0, 0, 0.1);
-}
-
-.guess{
-    width: 60px;
-    padding: 10px;
-    font-size: 19px;
-    margin: 10px;
-    text-align: center;
-    border: 2px solid#ccc;
-    border-radius: 5px;
-    background-color: darkslateblue;
-}
-
-h1{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 800px;
-    font-size: 32px;
-}
-
-p{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    margin-top: 15px;
+    align-items: center;
+}
+#guess{
+    width: 350px;
+    height: 60px;
+    background-color: white;
+    margin-bottom: 18px;
+    border-style: hidden;
+    border-radius: 5px;
+}
+#guessBtn{
+    width: 350px;
+    height: 60px;
+    background: #3ae3a8;
+    border-radius: 5px;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    border-style: hidden;
+}
+#titolo{
+    margin-left: 30px;
+    margin-top: 144px;
+    margin-bottom: 48px;
+    font-family: 'inter';
+    font-weight: 700;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    color:#000000
+}
+#messaggio1{
+   font-family: 'inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color:#000000;
+   margin-top: 18px;
+}
+#messaggio2{
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color:#000000;
+    margin-top: 2px;
 }
 
-.bottone{
-    background-color: mediumorchid;
-    border: none;
-    padding: 10px 20px;
-    font-size: 19px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+body{
+    
+    background-color: #CCFFC5;
+}
+
+.rules{
+    font-family: 'inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color:#000000;
+    margin-bottom: 80px;
+    width: 548px;
 }

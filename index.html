@@ -7,32 +7,55 @@
     <title>Indovina il numero</title>
     <link rel="stylesheet" href="static/css/index.css">
 </head>
-
 <body>
     <div class="contenitore">
         <header>
-            <h1>Indovina il numero</h1>
+            <h1 id="titolo">Indovina il numero</h1>
         </header>
 
         <div class="rules">
-            <p>
-                Devi indovinare il numero magico. Inserisci un numero e poi clicca sul pulsante
-            </p>
+            <ol>
+                <li>
+                    il computer sceglierà segretamente un numero intero casuale tra 1 e 100.
+                </li>
+                <li>
+                    il tuo obbiettivo è indovinare questo nunmero segreto nel minor numero di tentativi possibile.
+                </li>
+                <li>
+                    ad ogni tentativo, inserisci un numero e il computer ti darà un indizio:
+                </li>
+                <li>
+                    se il tuo numero è troppo basso, ti dirà "troppo basso, prova un numero più alto!"
+                </li>
+                <li>
+                    se il tuo numero è troppo alto, ti dirà "troppo alto, prova un numero più basso!"
+                </li>
+                <li>
+                    se indovi erai il numero esatto, vincerai la partita!
+                </li>
+                <li>
+                    continua a fare tentativi finchè non indovini il numero magico 
+                </li>
+                <li>
+                    alla fine del gioco, ti verrà mostrato il numero di tentativi che hai impiegato per indovinare               
+                </li>
+                <li>
+                    sfida te stesso a indovinare il numero con il minor numero di tentativi possibile!
+                </li>
+            </ol>
         </div>
-
-
-        <div>
-            <form action="" method="get">
-                <input type="number" name="guess" id="guess">
-                <div class="bottone">
-                    <input type="button" name="btn" id="guessBtn" value="Indovina">
-                </div>
-            </form>
-        </div>
-
-        <script src="static/js/index.js">
-
-        </script>
+        <p class="inter-uniquifier">inserisci il numero magico</p>
+        <form action="" method="get">
+            <input type="number" name="guess" id="guess" value="">
+            <br>
+            <input type="button" name="btn" id="guessBtn" value="Indovina">
+        </form>
+        <div id="messaggio1">
+            non hai ancora inserito il numero</div>
+        <div id="messaggio2">
+            hai a disposizion e 5 tentativi</div>
     </div>
+
+    <script src="static/js/index.js"></script>
 </body>
 </html>
