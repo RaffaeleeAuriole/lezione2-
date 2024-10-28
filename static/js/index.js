@@ -22,6 +22,33 @@ function handleClick(event) {
     let ele1 = document.querySelector("#messaggio1");
     let ele2 = document.querySelector("#messaggio2");
 
+    //cambio colore tispetto al numero di tentativi e cambio stato faccina
+    let faccina = document.querySelector("#faccina");
+    let element = document.querySelector("#background");
+
+    if(tentativi === 4) {
+        faccina.classList.add("happy");
+    } else if (tentativi === 3){
+        faccina.classList.remove("happy");
+        faccina.classList.add("neutral");
+    } else if (tentativi === 1){
+        faccina.classList.remove("neutral");
+        faccina.classList.add("sad");
+    }
+
+    let btn = document.querySelector("#guessBtn");
+    if (tentativi === 4){
+        element.classList.remove("background-green");
+        element.classList.add("background-yellow");
+        btn.classList.remove("background-green");
+        btn.classList.add("background-yellow")
+    } else if (tentativi == 2) {
+        element.classList.remove("background-yellow");
+        element.classList.add("background-red");
+        btn.classList.remove("background-yellow");
+        btn.classList.add("background-red")
+    }
+
     if (isNaN(numeroInserito)) {
         ele1.innerHTML = "Non hai ancora inserito nessun numero";
         ele2.innerHTML = "Inserisci un numero valido";
@@ -42,6 +69,7 @@ function handleClick(event) {
             indovinato = true;
             document.querySelector("#guess").disabled = true;
             document.querySelector("#guessBtn").disabled = true;
+            setTimeout(() => location.reload(), 5000)
         }
     }
 
@@ -50,6 +78,7 @@ function handleClick(event) {
         ele2.innerHTML = "Il numero era <strong>" + numGenerato + "</strong>";
         document.querySelector("#guess").disabled = true;
         document.querySelector("#guessBtn").disabled = true;
+        setTimeout(() => location.reload(), 5000)
     }
 }
 

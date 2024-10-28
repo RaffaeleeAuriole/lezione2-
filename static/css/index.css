@@ -73,3 +73,41 @@ body{
     margin-bottom: 80px;
     width: 548px;
 }
+
+.btn-green{
+    background-color: #3AE4A8 !important;
+}
+
+.btn-yellow{
+    background-color: yellow !important;
+}
+
+.btn-red{
+    background-color: red !important;
+}
+
+.background-green{
+    background-color: #CCFFC5;
+}
+
+.background-yellow{
+    background-color: #fbe106;
+}
+
+.background-red{
+    background-color: #ca3433;
+}
+
+.happy {
+    content : url('static/img/happy.png');
+}
+
+.neutral{
+    content : url('static/img/neutral.png');
+}
+
+.sad{
+    content: url('static/img/sad.png')
+}
+
+
