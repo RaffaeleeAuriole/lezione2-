@@ -26,9 +26,7 @@ function handleClick(event) {
     let faccina = document.querySelector("#faccina");
     let element = document.querySelector("#background");
 
-    if(tentativi === 4) {
-        faccina.classList.add("happy");
-    } else if (tentativi === 3){
+    if (tentativi === 3){
         faccina.classList.remove("happy");
         faccina.classList.add("neutral");
     } else if (tentativi === 1){

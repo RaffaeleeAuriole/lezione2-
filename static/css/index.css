@@ -28,7 +28,7 @@
 }
 #titolo{
     margin-left: 30px;
-    margin-top: 144px;
+    margin-top: 44px;
     margin-bottom: 48px;
     font-family: 'inter';
     font-weight: 700;
@@ -99,15 +99,19 @@ body{
 }
 
 .happy {
-    content : url('static/img/happy.png');
+    content : url('imgs/happy.png');
 }
 
 .neutral{
-    content : url('static/img/neutral.png');
+    content : url('imgs/neutral.png');
 }
 
 .sad{
-    content: url('static/img/sad.png')
+    content: url('imgs/sad.png')
 }
 
+#faccina{
+    width: 200px;
+    height: 200px;
+}
 
